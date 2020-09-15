@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="/css/index1.css">
+  <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <nav>
+            <div class="logo">
+                <img src="/img/bower-logo-removebg-preview.png" width="100" height="40">
+            </div>
+            <ul id="nav-1">
+                <li><a href='#' class="active">HOME</a></li>
+                <li><a href='#login'>LOGIN</a></li>
+                <li><a href='#contact'>CONTACT</a></li>
+                <li><a href='#card_details'>ABOUT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="intro">
+        <div class="text">
+            <p>Enjoy</p>
+            <p>
+              <span class="word wisteria">HD-Audio</span>
+              <span class="word belize">4K-Video</span>
+              <span class="word pomegranate">8D-Audio</span>
+              <span class="word green">Beautiful-Music</span>
+              <span class="word midnight">My-Beautiful-Website</span>
+            </p>
+          </div>          
+    </div>
+
+
+    <div class="video-container">
+        <video autoplay loop muted id="video-bg">
+			<source src="/vedio/PexelsVideos2087654.mp4" type="video/mp4">
+		</video>
+    </div>
+
+    <div class="bg-img" id="login">
+        <form action="/music.html" class="container">
+          <h1>Login</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <div class="col-lg-3">
+              <button class="my-btn btn5">login</button>
+          </div>
+        </form>
+    </div>
+
+
+    
+    <section id="contact">
+  
+      <h1 class="section-header">CONTACT ME</h1>
+      
+      <div class="contact-wrapper">
+        
+          <!---------------- 
+    
+          CONTACT PAGE LEFT 
+        
+          -----------------> 
+        
+        <form class="form-horizontal" role="form">
+           
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="">
+            </div>
+    
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">
+            </div>
+          </div>
+    
+          <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
+          
+          <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+            <div class="button">
+              <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+            </div>
+          
+          </button>
+          
+        </form>
+        
+          <!---------------- 
+    
+          CONTACT PAGE RIGHT 
+        
+          -----------------> 
+        
+          <div class="direct-contact-container">
+    
+            <ul class="contact-list">
+              <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">KANDARP PATEL</span></i></li>
+              
+              <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:9265056817" title="Give me a call">+919265056817</a></span></i></li>
+              
+              <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:patelkandarp2490@gmail.com" title="Send me an email">patelkandarp2490@gmail.com</a></span></i></li>
+              
+            </ul>
+    
+            <hr>
+            <ul class="social-media-list">
+              <li><a href="/github.com/kandarp0007/kandarp0007.github.io" target="_blank" class="contact-icon">
+                <i class="fa fa-github" aria-hidden="true"></i></a>
+              </li>
+              <li><a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </li>
+              <li><a href="#" target="_blank" class="contact-icon">
+                <i class="fa fa-instagram" aria-hidden="true"></i></a>
+              </li>
+            </ul>
+            <hr>
+    
+            <div class="copyright">&copy; created by kandarp patel</div>
+    
+          </div>
+        
+      </div>
+      
+    </section>  
+    <section id="card_details">
+      <div class="card-video-container">
+        <video autoplay loop muted id="video-bg">
+			<source src="/vedio/Pexels Videos 2324166.mp4" type="video/mp4">
+		</video>
+    </div>
+    <div class="card" style="width:400px">
+      <img class="card-img-top" src="/img/IMG_20190604_115337_816.jpg" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Kandarp patel</h4>
+        <p class="card-text">CE-095</p>
+      </div>
+    </div>
+  </section>
+      
+      
+</body>
+<script src="/js/index1.js"></script>
+<script src="/js/intro.js"></script>
+</html>
