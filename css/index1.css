@@ -1,0 +1,605 @@
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+* {
+    box-sizing: border-box;
+  }
+
+/*TRANSPARENT NAV BAR*/
+
+
+nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+}
+nav .logo{
+    float: left;
+}
+nav .logo img{
+    padding: 22px 20px;
+    width: 100%;
+    height: 200px;
+    float: left;
+
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li a{
+    position: relative;
+    padding: 0.5em 3em;
+    font-size: 25px;
+    border: none;
+    outline:none;
+    color: #333;
+    display: inline-block;
+    text-decoration: none;
+    z-index: 3;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    background-color: rgb(158, 155, 155);
+    border-radius:10em ;
+}
+
+nav ul li a.active{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    background-color: rgb(243, 126, 126);
+    border-radius:10em ;
+}
+
+#nav-1 {
+    position: relative;
+    border: none;
+    border-radius: 10em;
+    display: flex;
+    list-style: none;
+    background: #f0f1f0;
+    box-shadow: 20px 40px 40px #00000033;
+    padding: 10px;
+}
+
+
+/*VEDIO CONTAINER*/
+.video-container {
+    z-index: -100;
+    width:100%;
+    height:620px;
+    overflow:hidden;
+    position:absolute;
+    top:0;
+    left:0;
+    }
+    
+#video-bg{
+    width:100%; 
+}
+/*INtro section*/
+/*
+.intro{
+  font-family: Cookie;
+  position: absolute;
+  top: 200px;
+  left: 800px;
+  z-index: -99;
+  font-size: 25px;
+}*/
+@import url(https://fonts.googleapis.com/css?family=Cookie);
+
+.intro{
+  z-index: -99;
+  position: absolute;
+  top: 300px;
+  left: 1000px;
+
+}
+.text {
+  position: absolute;
+  width: 536px;
+  left: 50%;
+  margin-left: -308px;
+  height: 71px;
+  top: 50%;
+  margin-top: -16px;
+  font-family: Cookie;
+  font-weight: 600;
+  font-size: 45px;
+}
+
+p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+
+.word {
+  position: absolute;
+  width: 450px;
+  opacity: 0;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.wisteria {
+  color: #8e44ad;
+}
+
+.belize {
+  color: #2980b9;
+}
+
+.pomegranate {
+  color: #c0392b;
+}
+
+.green {
+  color: #16a085;
+}
+
+.midnight {
+  color: #2c3e50;
+}
+
+
+
+
+/*login section*/
+
+.bg-img {
+    /* The image used */
+    background-image: url("/img/pexels-burst-374808.jpg");
+    /* Center and scale the image nicely */
+    height:800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 600px;
+    z-index: -99;
+  }
+  
+  /* Add styles to the form container */
+  .container {
+    position: absolute;
+    top:200px;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color:rgba(0,0,0,0.5);
+    border-radius: 2em;
+    z-index: 0;
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    background: #979696;
+    border-radius: 0.25em;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit button */
+
+  .btn {
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 2.5;
+  }
+  .my-btn {
+    background: transparent;
+    color: #fff;
+    font-weight: 600;
+    border: 2px solid #fff;
+    padding: 10px 40px;
+    transition: 0.3s;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 2;
+    font-family: "Poppins", sans-serif;
+    background-color: #21c93d;
+    border: black;
+    border-style: solid;
+    border-radius: 0.5em;
+  }
+  .my-btn:focus {
+    outline: none;
+  }
+  
+  .my-btn:hover {
+    color: #000;
+  }
+  /*----------------btn 5------------------*/
+  
+  .btn5::after {
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform-origin: 0 0;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    content: "";
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: -1;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+  }
+  .btn5:hover:after {
+    transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+  }
+
+
+
+
+
+/*contact section */
+#contact {
+  width: 100%;
+  position: absolute;
+  top: 1416px;
+  height: 100vh;
+  background-color: #111;
+  overflow: hidden;
+  padding-bottom: 200px;
+  z-index: -98;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  font: 300 60px 'Oswald', sans-serif;
+  letter-spacing: 6px;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.contact-wrapper {
+  margin: 0 auto;
+  padding-top: 20px;
+  position: relative;
+  max-width: 800px;
+}
+
+/* Begin Left Contact Page */
+.form-horizontal {
+  float: left;
+  max-width: 400px;
+  font-family: 'Lato';
+  font-weight: 400;
+}
+
+.form-control, textarea {
+  max-width: 400px;
+  background-color: #111;
+  color: rgb(252, 249, 249);
+  letter-spacing: 1px;
+  background: #111;
+  border-radius: 0.25em;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: rgb(80, 38, 233);
+  border-color: rgb(27, 223, 43);
+}
+.send-button {
+  margin-top: 15px;
+  height: 50px;
+  width: 349px;
+  overflow: hidden;
+  border-radius: 0ch;
+  transition: all .2s ease-in-out;
+}
+
+.button {
+  width: 328px;
+  height: 60px;
+  transition: all .2s ease-in-out;
+}
+
+.send-text {
+  display: block;
+  margin-top: 10px;
+  margin-left: 0px;
+  font: 300 19px 'Lato', sans-serif;
+  letter-spacing: 3px;
+}
+
+.button:hover {
+  transform: translate3d(0px, -35px, 0px);
+}
+
+/* Begin Right Contact Page */
+.direct-contact-container {
+  max-width: 400px;
+  float: right;
+  margin-top: 5px;
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+.list-item {
+  line-height: 4;
+  color: #aaa;
+}
+
+.contact-text {
+  font: 300 18px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color: #bbb;
+}
+
+.place {
+  margin-left: 62px;
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
+.contact-text a {
+  color: #bbb;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Social Media Icons */
+.social-media-list {
+  position: relative;
+  font-size: 2.3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.social-media-list li a {
+  color: #fff;
+}
+
+.social-media-list li {
+  position: relative; 
+  top: 0;
+  left: -20px;
+  display: inline-block;
+  height: 70px;
+  width: 70px;
+  margin: 10px auto;
+  line-height: 70px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgb(27,27,27);
+  cursor: pointer; 
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px rgb(27, 223, 43);
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:hover {
+  background-color: rgb(80, 38, 233); 
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;  
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.social-media-list li:hover a {
+  color: #111;
+}
+
+.copyright {
+  font: 200 14px 'Oswald', sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+hr {
+  border-color: rgba(255,255,255,.8); ;
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 760px) {
+    #contact {
+        height: 1000px;
+    }
+  .section-header {
+    font-size: 65px;
+  }
+  .direct-contact-container, .form-horizontal {
+    float: none;
+    margin: 10px auto;
+  }  
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }    
+  .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+  .social-media-list li:after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 569px) {
+  #contact {
+    height: 1200px;
+    }
+  .section-header{
+    font-size: 50px;
+  }
+  .direct-contact-container, .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }  
+  .form-control, textarea {
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  
+  .name, .email, textarea {
+    width: 280px;
+  } 
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }  
+  .social-media-list {
+    left: 0;
+  }
+  .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+  .social-media-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+  
+}
+
+@media screen and (max-width: 410px) {
+  .send-button {
+    width: 99%;
+  }
+}
+
+
+
+/*about us*/
+#card_details{
+  width: 100%;
+  position: absolute;
+  top: 2069px;
+  height: 600px;
+  overflow: hidden;
+  padding-bottom: 200px;
+  z-index: -98;
+}
+
+.card{
+  position: absolute;
+  left: 519px;
+  margin-top: 50px;
+  border: rgb(0, 0, 0,0.1);
+  border-style: solid;
+  border-width: 0.5rem;
+
+  background-color: rgb(255, 255, 255,0.23);
+  color: #ddd;
+  z-index: 1;
+
+}
+
+.card:hover{
+  border-style: solid;
+  border-width: 1rem;
+
+}
+
+.card-video-container{
+    z-index: -100;
+    width:100%;
+    height:620px;
+    overflow:hidden;
+    position:absolute;
+    top:0;
+    left:0;
+}
+    
