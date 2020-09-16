@@ -185,7 +185,7 @@ p {
 
 .bg-img {
     /* The image used */
-    background-image: url("/img/pexels-burst-374808.jpg");
+    background-image: url("https://github.com/kandarp0007/ATPROJECT095/blob/master/img/pexels-burst-374808.jpg");
     /* Center and scale the image nicely */
     height:800px;
     background-position: center;
@@ -571,7 +571,7 @@ hr {
   overflow: hidden;
   padding-bottom: 200px;
   z-index: -98;
-      background-image: url("/img/pexels-krivec-ales-547115.jpg");
+      background-image: url("https://github.com/kandarp0007/ATPROJECT095/blob/master/img/pexels-krivec-ales-547115.jpg");
       height:800px;
       background-position: center;
       background-repeat: no-repeat;
